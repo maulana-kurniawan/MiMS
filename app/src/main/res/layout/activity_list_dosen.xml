@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/secondary"
+    tools:context=".ListDosen">
+
+    <ImageView
+        android:src="@drawable/ic_shape"
+        android:layout_marginTop="-10dp"
+        android:layout_width="220dp"
+        android:layout_height="200dp"/>
+
+    <ImageView
+        android:id="@+id/img"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:src="@drawable/ic_data_akademik2"
+        android:layout_width="80dp"
+        android:layout_height="80dp"/>
+    <TextView
+        android:layout_below="@+id/img"
+        android:text="Data Dosen"
+        android:textColor="@color/black"
+        android:layout_marginLeft="20dp"
+        android:layout_marginBottom="30dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <RelativeLayout
+        android:background="@drawable/bg_white_round_top"
+        android:layout_marginTop="170dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp">
+
+            <RelativeLayout
+                android:layout_marginRight="15dp"
+                android:layout_marginLeft="15dp"
+                android:padding="15dp"
+                android:background="@drawable/bg_textfield"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:layout_centerVertical="true"
+                    android:id="@+id/cari"
+                    android:hint="Cari..."
+                    android:background="@android:color/transparent"
+                    android:textSize="14dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_width="280dp"
+                    android:layout_height="wrap_content"/>
+
+                <ImageView
+                    android:id="@+id/btn_cari"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:src="@drawable/ic_baseline_search_24"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"/>
+
+            </RelativeLayout>
+
+            <ScrollView
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="65dp">
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/recycleView"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                    </androidx.recyclerview.widget.RecyclerView>
+
+                </RelativeLayout>
+
+            </ScrollView>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+
+
+</RelativeLayout>

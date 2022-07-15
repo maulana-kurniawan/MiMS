@@ -1,0 +1,15 @@
+package com.mi20.mims;
+
+import androidx.appcompat.app.AppCompatActivity;
+
+import android.app.Activity;
+import android.os.Bundle;
+
+public class DetailMSVS extends Activity {
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_detail_m_s_v_s);
+    }
+}
